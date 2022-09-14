@@ -1,0 +1,19 @@
+#include<stdio.h>
+int fact(int);
+int main()
+{
+    int num,f;
+    printf("enter a number: ");
+    scanf("%d",&num);
+    f=fact(num);
+    printf("factorial of %d is %d",num,f);
+    printf("\n\n\t\t\tcoding is fun !\n\n\n");
+    return 0;
+}
+int fact(int aj)
+{
+    if(aj==1 || aj==0)
+    return 1;
+    else
+    return(aj*fact(aj-1));
+}
